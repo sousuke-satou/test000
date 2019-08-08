@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="Shift-JIS">
+    <title>ヘッダーテスト</title>
+    <link rel="stylesheet" href="test02.css">
+
+  </head>
+  <body>
+    <!--ヘッダー -->
+    <header class="grovalNavigation" style="background-color: #EEFFFF">
+       <div class="header-name">自社サービス開発</div>
+      <div class="header-li">
+        <ul>
+          <!-- ヘッダーのリストの設定 id = "vic" 2019/03/10 
+               id：ひとつのidはページ内で1度しか使えない。また、1要素に複数のidはつけられない。→ CSSにおける指定 : #
+               class：ひとつのページ内で同じclassをいくつでも使える。1要素に複数のidをつけて良い。→ CSSにおける指定 : .-->
+          <li id = "vic" ><a class="link_button" href="test06.html">新規申し込み</a></li>
+          <li id = "vic"><a class="link_button" href="test04.html">世界遺産紹介</a></li>
+          <li id = "vic"><a class="link_button" href="test05.html">イメージルーム</a></li>
+          <li id = "vic"><a class="link_button" href="test03.html">問い合わせ</a></li>
+          <!-- 終 -->
+        </ul>
+      </div>
+    </header>
+  
+    <main>
+    <!--ブロックレベル-->
+       <div class="localNavigation">
+<!-- サイドメニューの内容の設定 2019/03/10-->  
+         <div class="local">
+           <p>ナビゲーション</p>
+         </div> 
+  
+<!-- サイドメニューのセレクトの設定 -->         
+       <form > 
+    <select name="nav" class="selected" >
+      <option value="top">トップページ</option>
+      <option value="company-introduce">新規申し込み</option>
+      <option value="contens">世界遺産紹介</option>
+      <option value="greeting">イメージルーム</option>
+      <option value="access">問い合わせ</option>
+    </select>
+       </form>
+<!-- 終 -->
+
+<!-- サイドメニューのリストボックスの設定 2019/03/25 -->
+       <div id="box1">  
+       <ul>
+         <li>世界遺産紹介</li>
+         <ul>
+           <li><a href="test04.html#con">厳島神社</a></li>
+           <li><a href="test04.html#road">万里の長城</a></li>
+         </ul>
+       </ul>
+       </div>
+        <div id="box1">  
+       <ul>
+         <li>新規申し込み</li>
+         <ul>
+           <li>スタッフ</li>
+           <li>経歴</li>
+           <li>その他</li>
+         </ul>
+       </ul>
+       </div>
+         <div id="box1">  
+       <ul>
+         <li>イメージルーム</li>
+         <ul>
+           <li>代表挨拶</li>
+           <li>実績と経歴</li>
+         </ul>
+       </ul>
+       </div>
+       </section>
+           <section class="form_road">
+              <a href="test03.html"><img  class="form_check" src="images.jpeg"></a>
+              <figcaption>問い合わせや各種質問などはこちら!!</figcaption>
+          </section>
+          </section>
+           <section class="in_com">
+              <a href="#"><img  class="form_check" src="1517671524117.jpg"></a>
+              <figcaption>業務体験インターン開催!!</figcaption>
+          </section>
+          </section>
+           <section class="seminar">
+              <a href="#"><img  class="form_check" src="1517671525391.jpg"></a>
+              <figcaption>資格取得セミナー随時申し込み受付</figcaption>
+          </section>
+          </section>
+           <section class="eng">
+              <a href="#"><img  class="form_check" src="1517671523452.jpg"></a>
+              <figcaption>エンジニア募集!!</figcaption>
+          </section>
+<!-- 終 2019/03/25 -->
+       </div>
+       <div class="content">
+       
+       <!-- 2019/03/17 追加分 -->
+       
+       <!-- トップイメージ -->
+          <img class="top_image" src="DIS.jpg" ">
+       <!-- お知らせとブログ -->
+          <div class="right_move">
+            <section class="colors">
+            <p class="news">お知らせ</p>
+            <ul>
+               <li><time datetime="2019-03-01">2019.03.01</time>
+               新規事業「〇〇〇」の準備のため新店舗展開
+               <li><time datetime="2019-03-27">2019.03.27</time>
+               新商品「〇〇〇」を再入荷いたしました。どうぞご利用ください!!
+               <li><time datetime="2019-04-01">2019.04.01</time>
+               埼玉の店舗にて、カフェをオープン!!お楽しみに(o^―^o)ﾆｺ
+                <li><time datetime="2019-04-15">2019.04.01</time>
+               福島の店舗にて、カフェをオープン!!お楽しみに(o^―^o)ﾆｺ
+                <li><time datetime="2019-04-27">2019.04.01</time>
+               沖縄の店舗にて、カフェをオープン!!お楽しみに(o^―^o)ﾆｺ
+           </ul>
+           </section>
+           <section class="blog">
+              <a href="https://www.ameba.jp/home"><img  class="blog_image" src="thumb_ameba.png"></a>
+              <figcaption>ブログも随時公開しておりますー！！</figcaption>
+          </section>
+         </div>
+         
+        <!-- 以降はマップ関連 --> 
+        <div>
+        <div class="access">
+          <p class="access_title">店舗へのアクセス</p>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4209.201323602495!2d139.71992174825803!3d35.560170884355735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1552800958052" 
+        width="1217" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        
+    <!-- 2019/03/17 終 -->    
+          
+       </div>
+       
+       <!-- 問い合わせフォームを削除>
+       <!-->
+   </main>
+   
+   <footer style="background-color:#EEFFFF">
+     <div class = "container">                     
+        <address class = "right"> Copyright（C）VARTH株式会社、予約制(24時間OK)</address>            
+     </div>     
+   </footer>
+
+</body>
+</html>
